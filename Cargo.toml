@@ -13,7 +13,10 @@ repository = "https://github.com/AdamNiederer/faster"
 readme = "README.org"
 
 [dependencies]
-vektor = {git = "https://github.com/Titaniumtown/vektor"}
+vektor = {git = "https://github.com/Titaniumtown/vektor.git"}
+packed_simd = {git = "https://github.com/rust-lang/packed_simd.git", package = "packed_simd_2"}
+
+[patch."https://github.com/Titaniumtown/vektor"]
 packed_simd = {git = "https://github.com/rust-lang/packed_simd.git", package = "packed_simd_2"}
 
 [features]
