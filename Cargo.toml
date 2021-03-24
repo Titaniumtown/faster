@@ -14,7 +14,7 @@ readme = "README.org"
 
 [dependencies]
 vektor = "0.2.1"
-packed_simd = "0.3"
+packed_simd = {git = "https://github.com/rust-lang/packed_simd.git", package = "packed_simd_2"}
 
 [features]
 default = ["std"]
